@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Thư mục và file build
+build/
+dist/
+*.egg-info/
+
+# Thư mục môi trường ảo (nếu có)
+venv/
+env/
+.venv/
+
+# File cấu hình cá nhân, mật khẩu
+*.env
+.env
+
+# Log files
+*.log
+
+# Thư mục ABC bạn muốn bỏ qua /ABC
+
+# Các file IDE phổ biến
+.vscode/
+.idea/
+*.iml
+
+# File hệ điều hành
+.DS_Store
+Thumbs.db
