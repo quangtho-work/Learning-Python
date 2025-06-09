@@ -67,4 +67,6 @@ python không có do-while, thay vào đó sử dụng vòng lặp while với m
 điều kiện luôn đúng ban đầu, và kiểm soát thoát vòng lặp bằng cách 
 sử dụng break hoặc điều kiện khác bên trong khối code.
 """
-calculator()
+if __name__ == "__main__":
+    calculator()
+    

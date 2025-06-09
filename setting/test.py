@@ -1,2 +1,3 @@
 # chạy thử file python đầu tiên
-print("Hello world.")
+if __name__ == "__main__":
+    print("Hello world.")
