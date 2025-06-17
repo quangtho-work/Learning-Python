@@ -10,7 +10,8 @@ def menu():
         print("3. Sửa theo id")
         print("4. Hiển thị ")
         print("5. Tìm kiếm ")
-        print("6. Thoát ")
+        print("6. Sắp xếp theo tuổi")
+        print("7. Thoát ")
         choice = int(input("Vui lòng chọn chức năng: "))
         if choice == 1:
             add_human()
@@ -23,6 +24,8 @@ def menu():
         elif choice == 5:
             search_human()
         elif choice == 6:
+            sort_human()
+        elif choice == 7:
             break
         else:
             print("Chức năng không hợp lệ. Vui lòng nhập lại.")
@@ -32,7 +35,7 @@ def add_human():
 
     while True:
 
-        choice = input("Bạn muốn thêm ? (1: Sinh viên, 2: Giáo viên , 3: Người khác,4. Người nhân tạo , 5: Thoát): ")
+        choice = input("Bạn muốn thêm ? (1: Sinh viên, 2: Giáo viên , 3: Người khác, 4. Người nhân tạo , 5: Thoát): ")
         if choice == '1':
             name = input("Nhập tên: ")
             age = int(input("Nhập tuổi: "))
@@ -130,6 +133,10 @@ def search_human():
     for human in humans:
         if human.name == name:
             human.display()
+
+def sort_human():
+    humans.sort(reverse=True)
+
 if __name__ == '__main__':
     menu()
     show_all()

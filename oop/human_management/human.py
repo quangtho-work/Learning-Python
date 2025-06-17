@@ -1,5 +1,15 @@
 # @abstractmethod dùng để định nghĩa một phương thức của lớp trừu tượng, khi lớp con kế thừa thì bắt buộc phải triển khai nó
 # @staticmethod Phương thức tĩnh
+# __init__	Khởi tạo đối tượng	
+# __str__	Dùng trong print(obj)	
+# __len__	Dùng trong len(obj)	
+# __eq__	So sánh == giữa 2 object	
+# __lt__	So sánh <	
+# __getitem__	Truy cập phần tử obj[key]
+# __setitem__	Thay đổi phần tử obj[key] = value
+# __del__	Xóa đối tượng khỏi bộ nhớ
+# __call__	Call đối tượng như hàm
+# __getitem__	Truy cập phần tử obj[key]
 class human:
     id = 1
     def __init__(self, name, age, gender):
@@ -9,6 +19,8 @@ class human:
         self.age = age
         self.gender = gender
     
+    def __lt__(self, other ):
+        return self.age < other.age
     
     def display(self):
         print(f"Name: {self.name}, Age: {self.age}, Gender: {self.gender}")

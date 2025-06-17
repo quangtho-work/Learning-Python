@@ -1,7 +1,12 @@
 # Một cách khác để sử dụng tính đa hình ngoài kế thừa
 # Đối tượng chỉ cần có những thuộc tính/phương thức cần thiết tối thiểu
 # "Nếu nó trông giống con vịt và kêu như con vịt, thì nó phải là con vịt."
+"""
+vẫn có thể so sánh với đối tượng gốc và các con của nó 
+nếu đối tượng này có sẵn các thuộc tính tương tự 
+và các phương thức mà đối tượng gốc đã định nghĩa hàm __it__ để so sánh 
 
+"""
 class fakeHuman:
     id = 1
     def __init__(self, name, age, gender, madeBy):
